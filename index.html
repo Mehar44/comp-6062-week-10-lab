@@ -6,21 +6,21 @@
 </head>
 <body>
     <h1>Week 10 Lab</h1>
-  <div id="app">
-    <input type="text" v-model="firstName" placeholder="First Name">
-    <input type="text" v-model="lastName" placeholder="Last Name">
+    <div id="app">
+        <input type="text" v-model="firstName" placeholder="First Name">
+        <input type="text" v-model="lastName" placeholder="Last Name">
+        
+        
+        <p>Full Name: {{ fullName }}</p>
+        
     
+        <input type="number" v-model="quantity" min="0" placeholder="Quantity">
+        
+        <p>Price per Item: ${{ pricePerItem }}</p>
+        <p>Total Price: ${{ totalPrice }}</p>
     
-    <p>Full Name: {{ fullName }}</p>
-    
-   
-    <input type="number" v-model="quantity" min="0" placeholder="Quantity">
-    
-    <p>Price per Item: ${{ pricePerItem }}</p>
-    <p>Total Price: ${{ totalPrice }}</p>
-   
-    <button @click="clearFields">Clear Fields</button>
-  </div>
+        <button @click="clearFields">Clear Fields</button>
+    </div>
 
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
